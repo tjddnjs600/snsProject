@@ -3,6 +3,7 @@ package com.sns.account.entity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import org.hibernate.annotations.DynamicInsert;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -13,6 +14,7 @@ import javax.persistence.Table;
 @Builder
 @AllArgsConstructor
 @Table(name = "tb_account")
+@DynamicInsert
 public class AccountEntity {
 
     @Id
